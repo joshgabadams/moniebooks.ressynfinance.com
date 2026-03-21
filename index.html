@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0a0a0a;
+      color: #ffffff;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #00f0ff, #7a5cff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      margin-top: 15px;
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    .line {
+      width: 60px;
+      height: 3px;
+      background: #00f0ff;
+      margin: 20px auto;
+      animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        opacity: 0.5;
+        transform: scaleX(1);
+      }
+      to {
+        opacity: 1;
+        transform: scaleX(1.5);
+      }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.8rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Coming Soon</h1>
+    <div class="line"></div>
+    <p>We are building something amazing.</p>
+  </div>
+
+  <div class="footer">
+    &copy; 2026 MonieBooks
+  </div>
+
+</body>
+</html>
